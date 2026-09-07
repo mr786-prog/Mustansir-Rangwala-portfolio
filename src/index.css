@@ -1,3 +1,39 @@
+@media (max-width:480px) {
+	.page-shell { width:calc(100% - 28px); }
+	.floating-nav { max-width:calc(100% - 24px); overflow:hidden; }
+	.nav-links a { padding-inline:9px; }
+	.say-hi { padding-inline:9px; }
+	.hero { min-height:700px; }
+	.hero-content { padding-top:135px; }
+	.hero h1 { font-size:clamp(3.8rem,20vw,5.8rem); line-height:.82; }
+	.hero-bottom { width:100%; }
+	.hero-bottom p { max-width:290px; font-size:13px; }
+	.hero-actions { width:100%; flex-wrap:wrap; }
+	.hero-actions .button { justify-content:center; flex:1 1 135px; }
+	.scene-wrap { right:-52px; bottom:22px; width:285px; height:330px; }
+	.about-section,.projects-section { padding-block:72px; }
+	.about-grid h2,.toolkit h2 { font-size:clamp(3.2rem,15vw,4.8rem); }
+	.fact-row { gap:10px; margin-top:34px; }
+	.fact-row b { font-size:28px; }
+	.fact-row span { font-size:9px; }
+	.section-header h2 { font-size:clamp(3.2rem,15vw,5rem); }
+	.project-grid { gap:12px; margin-top:36px; }
+	.mediscan { padding:17px; }
+	.mediscan-main { gap:22px; padding-block:30px 24px; }
+	.project-card h3 { font-size:clamp(2rem,11vw,3rem); }
+	.project-copy { font-size:13px; line-height:1.6; }
+	.feature-strip { display:grid; grid-template-columns:1fr; gap:9px; }
+	.feature-strip span { font-size:11px; }
+	.disclaimer { align-items:flex-start; font-size:10px; line-height:1.45; }
+	.standard { min-height:250px; padding:20px; }
+	.toolkit { padding-block:72px 90px; }
+	.skills span { padding-block:13px; }
+	.footer { padding-top:70px; }
+	.footer h2 { font-size:clamp(3.2rem,15vw,5rem); }
+	.email-link { width:100%; justify-content:space-between; }
+	.email-address { max-width:100%; overflow-wrap:anywhere; font-size:15px; }
+	.footer-bottom { align-items:flex-start; flex-direction:column; gap:14px; margin-top:58px; }
+}
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
 @tailwind base;
 @tailwind components;
