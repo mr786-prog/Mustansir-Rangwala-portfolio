@@ -121,7 +121,7 @@ export default function HeroSection() {
       <div className="hero-content page-shell">
         <motion.p 
           custom={0}
-          variants={textVariants}
+          variants={textVariants as unknown as import('framer-motion').Variants}
           initial="hidden"
           animate="visible"
           className="kicker"
@@ -130,7 +130,7 @@ export default function HeroSection() {
         </motion.p>
         <motion.h1 
           custom={1}
-          variants={textVariants}
+          variants={textVariants as unknown as import('framer-motion').Variants}
           initial="hidden"
           animate="visible"
         >
@@ -138,7 +138,7 @@ export default function HeroSection() {
         </motion.h1>
         <motion.div 
           custom={2}
-          variants={textVariants}
+          variants={textVariants as unknown as import('framer-motion').Variants}
           initial="hidden"
           animate="visible"
           className="hero-bottom"
