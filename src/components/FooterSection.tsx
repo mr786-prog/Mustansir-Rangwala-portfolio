@@ -46,7 +46,6 @@ export default function FooterSection() {
           className="footer-cta"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.2 }}
         >
           <div>
             <p className="footer-eyebrow">Have an ambitious idea?</p>
@@ -62,7 +61,6 @@ export default function FooterSection() {
               boxShadow: '0 0 30px rgba(255, 116, 76, 0.4)'
             }}
             whileTap={{ scale: 0.95 }}
-            transition={{ type: 'spring', stiffness: 300, damping: 15 }}
           >
             <span>Write to me</span>
             <ArrowUpRight size={20} />
@@ -81,7 +79,6 @@ export default function FooterSection() {
             scale: 1.02,
             letterSpacing: '0.05em'
           }}
-          transition={{ type: 'spring', stiffness: 400, damping: 10 }}
         >
           mustansirrangwal52@gmail.com
         </motion.a>
@@ -96,7 +93,6 @@ export default function FooterSection() {
           <motion.span 
             className="availability"
             whileHover={{ scale: 1.1 }}
-            transition={{ type: 'spring', stiffness: 400, damping: 10 }}
           >
             <motion.i 
               animate={{ 
