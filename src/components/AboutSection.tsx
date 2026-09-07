@@ -1,0 +1,5 @@
+import { motion } from 'framer-motion';
+
+export default function AboutSection() {
+  return <section id="about" className="about-section page-shell"><div className="section-label">01 <span /> About me</div><div className="about-grid"><motion.h2 initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>Learning deeply.<br /><em>Shipping thoughtfully.</em></motion.h2><div className="about-copy"><p>I&apos;m Mustansir, a Computer Science &amp; Machine Learning student at Loyola Academy, Secunderabad. I&apos;m most interested in the space between an ambitious AI idea and the moment it becomes genuinely useful to someone.</p><p>My work combines applied machine learning, RAG workflows, APIs, and frontend development. I care about asking the right questions, building the complete flow, and making technical products feel simple to use.</p><div className="fact-row"><div><b>05</b><span>projects shipped</span></div><div><b>AI</b><span>systems &amp; agents</span></div><div><b>2026</b><span>currently building</span></div></div></div></div></section>;
+}
