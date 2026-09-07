@@ -2,9 +2,9 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 const ACHIEVEMENTS = [
-  'Winner — College AI Quiz Competition',
-  'Winner — College AI Poster Making Competition',
-  'Participant — College Hackathon',
+  'Winner — AI Quiz Competition - organised by my college',
+  'Winner — AI Poster Making Competition - organised by my college',
+  'Participant — Hackathon - organised by my college',
   'Participant — Smart India Hackathon (SIH) 2026'
 ];
 
