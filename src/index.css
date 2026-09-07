@@ -87,4 +87,46 @@ a { color:inherit; text-decoration:none; }
 
 @keyframes scroll-down { from { transform:translateY(-100%); } to { transform:translateY(220%); } }
 @media (max-width:780px) { .page-shell { width:min(100% - 36px,1200px); }.hero { min-height:760px; }.hide-mobile,.nav-links a:not(.active) { display:none; }.floating-nav { top:14px; }.hero-content { padding-top:160px; }.hero h1 { font-size:clamp(4.5rem,21vw,7rem); }.hero-bottom { align-items:start; flex-direction:column; margin-top:32px; }.scene-wrap { top:auto; right:-18px; bottom:45px; width:330px; height:380px; opacity:.78; }.portrait-orb { width:180px; }.card-ai { right:5px; }.card-build { bottom:5%; left:0; }.float-card { width:112px; height:92px; padding:12px; }.float-card strong { font-size:12px; }.scroll-cue { display:none; }.about-section,.projects-section { padding:90px 0; }.about-grid,.toolkit-content,.section-header { grid-template-columns:1fr; }.about-grid { gap:28px; }.section-header { gap:22px; }.section-header h2 { font-size:clamp(3.8rem,15vw,5.7rem); }.project-grid { margin-top:44px; }.mediscan { padding:21px; }.mediscan-main { grid-template-columns:1fr; min-height:0; gap:30px; padding:38px 0 30px; }.mediscan-logo-wrap { justify-self:start; width:min(230px,78%); }.feature-strip { padding-top:15px; }.standard,.standard:nth-child(3),.standard:nth-child(4) { grid-column:span 12; min-height:290px; }.toolkit-content { gap:35px; }.footer { padding-top:82px; }.footer-cta { align-items:start; flex-direction:column; }.email-address { margin-top:42px; }.footer-bottom { margin-top:70px; }.footer-bottom span:first-child { display:none; } }
+@media (max-width:480px) {
+	.page-shell { width:calc(100% - 28px); }
+	.floating-nav { max-width:calc(100% - 24px); }
+	.hero { min-height:815px; }
+	.hero-content { padding-top:128px; }
+	.hero h1 { max-width:62%; font-size:clamp(4rem,18vw,5.6rem); line-height:.84; }
+	.hero-bottom { position:relative; z-index:5; margin-top:210px; gap:18px; }
+	.hero-bottom p { max-width:275px; font-size:13px; line-height:1.55; }
+	.hero-actions { width:100%; }
+	.hero-actions .button { justify-content:center; flex:1 1 135px; }
+	.scene-wrap { z-index:4; top:166px; right:-20px; bottom:auto; width:255px; height:315px; opacity:1; pointer-events:none; }
+	.portrait-orb { top:10%; left:16%; width:166px; }
+	.portrait-orb img { object-position:50% 18%; transform:scale(1.12); }
+	.float-card { width:102px; height:84px; padding:11px; }
+	.card-ai { top:2%; right:0; }
+	.card-build { bottom:2%; left:0; }
+	.float-card strong { font-size:11px; }
+	.about-section,.projects-section { padding-block:72px; }
+	.about-grid { gap:40px; }
+	.about-grid h2,.toolkit h2,.section-header h2,.footer h2 { font-size:clamp(3.25rem,15vw,4.8rem); line-height:.9; }
+	.section-header { gap:30px; }
+	.section-header p { margin-top:26px; }
+	.fact-row { gap:10px; margin-top:34px; }
+	.fact-row b { font-size:28px; }
+	.fact-row span { font-size:9px; }
+	.project-grid { gap:12px; margin-top:36px; }
+	.mediscan { padding:17px; }
+	.mediscan-main { gap:22px; padding-block:30px 24px; }
+	.project-card h3 { font-size:clamp(2rem,11vw,3rem); }
+	.project-copy { font-size:13px; line-height:1.6; }
+	.feature-strip { display:grid; grid-template-columns:1fr; gap:9px; }
+	.feature-strip span { font-size:11px; }
+	.disclaimer { align-items:flex-start; font-size:10px; line-height:1.45; }
+	.standard { min-height:250px; padding:20px; }
+	.toolkit { padding-block:72px 90px; }
+	.toolkit-content { gap:42px; margin-top:42px; }
+	.skills span { padding-block:13px; }
+	.footer { padding-top:70px; }
+	.email-link { width:100%; justify-content:space-between; }
+	.email-address { max-width:100%; overflow-wrap:anywhere; font-size:15px; }
+	.footer-bottom { align-items:flex-start; flex-direction:column; gap:14px; margin-top:58px; }
+}
 @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto !important; animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; } }
