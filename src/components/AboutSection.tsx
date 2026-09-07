@@ -59,7 +59,7 @@ export default function AboutSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <p>I&apos;m Mustansir, a Computer Science &amp; Machine Learning student at Loyola Academy, Secunderabad. I&apos;m most interested in the space between an ambitious AI idea and the moment it becomes genuinely useful to someone.</p>
-          <p>My work combines applied machine learning, RAG workflows, APIs, and frontend development. I care about asking the right questions, building the complete flow, and making technical products feel simple to use.</p>
+          <p>My work combines RAG workflows, APIs, Databases and frontend development. I care about asking the right questions, building the complete flow, and making technical products feel simple to use.</p>
           
           <motion.div 
             className="fact-row"

@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
-const SKILLS = ['Python', 'JavaScript', 'React', 'Machine Learning', 'RAG', 'MCP', 'REST APIs', 'NumPy', 'Git & GitHub'];
+const SKILLS = ['Python', 'JavaScript', 'React', 'Machine Learning', 'RAG', 'MCP', 'REST APIs', 'NumPy', 'Git & GitHub', 'SQL' , 'Supabase' , 'Pinecone' , 'Langchain' , 'AI Fundamentals'];
 
 export default function ToolkitSection() {
   const sectionRef = useRef<HTMLElement>(null);

@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import ProjectsSection from './components/ProjectsSection';
 import ToolkitSection from './components/ToolkitSection';
+import AchievementsSection from './components/AchievementsSection';
 import FooterSection from './components/FooterSection';
 import CustomCursor from './components/CustomCursor';
 
@@ -15,6 +16,7 @@ export default function App() {
       <AboutSection />
       <ProjectsSection />
       <ToolkitSection />
+      <AchievementsSection />
       <FooterSection />
     </main>
   );
