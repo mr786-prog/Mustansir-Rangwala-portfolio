@@ -1,7 +1,8 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import SceneBand from './SceneBand';
 
-const SKILLS = ['Python', 'Basic React','RAG', 'MCP', 'REST APIs', 'NumPy', 'Git & GitHub', 'SQL' , 'Supabase' , 'Pinecone' , 'Langchain' , 'AI Fundamentals' , ' Generative AI' , 'Basic DSA' , 'HTML & CSS' ];
+const SKILLS = ['Python', 'Basic React','RAG', 'MCP', 'REST APIs', 'NumPy', 'Git & GitHub', 'SQL' , 'Supabase' , 'Pinecone' , 'Langchain' , 'AI Fundamentals' , ' Generative AI' , 'Basic DSA' , 'HTML & CSS' , 'Basics Of SEO'];
 
 export default function ToolkitSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -42,6 +43,7 @@ export default function ToolkitSection() {
         03 <span /> Toolkit
       </motion.div>
       
+      <SceneBand src="/media/scene-toolkit.webp" alt="A code editor surrounded by floating Python, Flask, Supabase, Pinecone and Gemini badges, with the words Built with a curious stack." position="50% 45%" />
       <div className="toolkit-content">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}

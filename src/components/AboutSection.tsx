@@ -1,5 +1,6 @@
 import { motion, useInView, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
+import SceneBand from './SceneBand';
 
 export default function AboutSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -43,6 +44,7 @@ export default function AboutSection() {
         01 <span /> About me
       </motion.div>
       
+      <SceneBand src="/media/scene-about.webp" alt="Mustansir at his desk at dusk, with the words Learning deeply. Shipping thoughtfully." position="50% 40%" />
       <div className="about-grid">
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
@@ -71,7 +73,7 @@ export default function AboutSection() {
               whileHover={{ scale: 1.05 }}
               transition={{ type: 'spring', stiffness: 400, damping: 10 }}
             >
-              <Counter end="05" />
+              <Counter end="07" />
               <span>projects shipped</span>
             </motion.div>
             <motion.div 

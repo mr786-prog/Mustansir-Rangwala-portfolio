@@ -1,9 +1,9 @@
 import { ArrowDown, ArrowUpRight, Mail } from 'lucide-react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import LazyVideo from './LazyVideo';
 
 const GMAIL_COMPOSE = 'https://mail.google.com/mail/?view=cm&fs=1&to=mustansirrangwal52@gmail.com';
-const PORTRAIT = '/mustansir-portrait.jpeg';
 
 export default function HeroSection() {
   const { scrollY } = useScroll();
@@ -76,6 +76,8 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="hero min-h-screen">
+      <LazyVideo className="hero-video" src="/media/hero.mp4" poster="/media/hero-poster.jpg" />
+      <div className="hero-scrim" aria-hidden="true" />
       <div className="hero-noise" />
       <nav className="floating-nav" aria-label="Main navigation">
         <motion.a 
@@ -181,7 +183,8 @@ export default function HeroSection() {
           animate={{ y: [0, -12, 0], rotate: [-1.5, 1.5, -1.5] }} 
           transition={{ repeat: Infinity, duration: 6, ease: 'easeInOut' }}
         >
-          <img src={PORTRAIT} alt="" />
+          <img className="portrait-base" src="/media/hero-portrait-1.webp" alt="" />
+          <img className="portrait-ai" src="/media/hero-portrait-2.webp" alt="" />
         </motion.div>
         
         <motion.div 

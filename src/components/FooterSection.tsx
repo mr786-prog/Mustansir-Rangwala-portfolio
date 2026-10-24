@@ -1,6 +1,7 @@
 import { ArrowUpRight } from 'lucide-react';
 import { motion, useInView, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
+import LazyVideo from './LazyVideo';
 
 const GMAIL_COMPOSE = 'https://mail.google.com/mail/?view=cm&fs=1&to=mustansirrangwal52@gmail.com';
 
@@ -39,7 +40,7 @@ export default function FooterSection() {
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          04 <span /> Start a conversation
+          05 <span /> Start a conversation
         </motion.div>
         
         <motion.div 
@@ -51,6 +52,7 @@ export default function FooterSection() {
             <p className="footer-eyebrow">Have an ambitious idea?</p>
             <h2>Let&apos;s make it<br /><em>useful.</em></h2>
           </div>
+          <LazyVideo className="bunny" src="/media/bunny.mp4" poster="/media/bunny-poster.jpg" />
           <motion.a 
             className="email-link" 
             href={GMAIL_COMPOSE} 

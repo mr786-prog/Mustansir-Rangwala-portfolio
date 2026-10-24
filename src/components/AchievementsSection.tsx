@@ -1,5 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import SceneBand from './SceneBand';
 
 const ACHIEVEMENTS = [
   'Winner — AI Quiz Competition - organised by my college',
@@ -44,6 +45,7 @@ export default function AchievementsSection() {
       <motion.div className="section-label" initial={{ opacity: 0, y: 20 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }}>
         04 <span /> Milestones
       </motion.div>
+      <SceneBand src="/media/scene-milestones.webp" alt="Mustansir at his desk with trophies behind him, with the words Learning, competing and growing." position="50% 40%" />
       <div className="achievements-heading">
         <motion.h2 initial={{ opacity: 0, y: 30 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.8, delay: 0.1 }}>
           Learning, competing<br /><em>and growing.</em>

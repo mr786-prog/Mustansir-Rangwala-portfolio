@@ -2,6 +2,8 @@ import type { ReactNode } from 'react';
 import { ArrowUpRight, Mic, MessageSquareText, ScanSearch, ShieldAlert } from 'lucide-react';
 import { motion, useInView, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { useRef } from 'react';
+import SceneBand from './SceneBand';
+import LazyVideo from './LazyVideo';
 import mediScanLogo from '../assets/mediscan-ai-logo.jpeg';
 
 const PROJECTS = [
@@ -9,6 +11,8 @@ const PROJECTS = [
   { title: 'EcoTwin', tag: 'AI · Sustainability', copy: 'A lightweight concept that explores how AI can model and support sustainability efforts on campus.', className: 'eco' },
   { title: 'Arwaesthetics', tag: 'Frontend · Client work', copy: 'A focused portfolio site for a Nagpur photography studio, designed to put its images and services first.', className: 'arx' },
   { title: 'Personal AI Assistant', tag: 'Voice AI · In progress', copy: 'An evolving voice-driven assistant that brings APIs, automation, and conversational AI into one useful system.', className: 'assistant' },
+  { title: 'Kisan Ai', tag: 'SIH Project', copy: 'Voice-first AI farming assistant with verified answers', className: 'kisan ai' },
+  { title: 'Yamoto motors', tag: 'SEO - Client work', copy: 'My first Client Based Website With SEO Optimization.', href: 'https://yamoto.in', className: 'Client Based Work' },
 ];
 
 export default function ProjectsSection() {
@@ -28,6 +32,7 @@ export default function ProjectsSection() {
 
   return (
     <section id="work" ref={sectionRef} className="projects-section page-shell">
+      <SceneBand src="/media/scene-work.webp" alt="A laptop showing the MediScan AI, Jarvis AI, AMS Trackbot and 3D Portfolio projects, with the words Things I've made with intention." />
       <motion.header 
         className="section-header"
         initial={{ opacity: 0, y: 30 }}
@@ -117,6 +122,7 @@ function TiltCard({ children, className }: { children: ReactNode; className?: st
 function MediScanCard() {
   return (
     <TiltCard className="project-card mediscan">
+      <LazyVideo className="mediscan-bg" src="/media/silk.mp4" poster="/media/silk-poster.jpg" />
       <motion.div
         initial={{ opacity: 0, y: 40, scale: 0.985 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
